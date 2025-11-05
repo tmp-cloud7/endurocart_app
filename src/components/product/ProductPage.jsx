@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import RelatedProducts from './RelatedProducts'
-import ProductPagePlaceHolder from './ProductPagePlaceholder'
+import ProductPagePlaceHolder from './ProductPagePlaceHolder'
 import { useParams } from 'react-router-dom'
 import api, { BASE_URL } from '../../api'
 import { toast } from 'react-toastify'
