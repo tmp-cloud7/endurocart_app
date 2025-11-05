@@ -10,7 +10,7 @@ const UserInfo = ({userInfo}) => {
                 alt='User Profle'
                 className={`img-fluid rounded-circle mb-3 mx-auto ${styles.profileImage}`}
             />
-            <h4>John Doe</h4>
+            <h4>{`${userInfo.first_name} ${userInfo.last_name}`}</h4>
             <p className='text-muted'>{userInfo.email}</p>
             <button className='btn mt-2' style={{ backgroundColor: '#6050DC', color: 'white' }}>Edit Profile </button>
         </div>

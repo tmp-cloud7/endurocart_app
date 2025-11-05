@@ -9,6 +9,26 @@ function PaymentStatusPage({setNumberCartItems}) {
   const [statusSubMessage, setStatusSubMessage] = useState('Wait a moment, your payment is being verified!');
   const location = useLocation();
 
+
+  useEffect(function(){
+    const queryParams = new URLSearchParams(location.search);
+    const paymentId = queryParams.get('paymentId')
+    const payId = queryParams.get('PayerID')
+    const ref = queryParams.get('ref')
+
+     if(paymentId && payId && ref) {
+      api.post(`paypal_payment_callback/?paymentId=${paymentId}&PayerID=${payId}&ref=${ref}`)
+      .then(res => {
+          setStatusMessage(res.data.message)
+          setStatusSubMessage(res.data.subMessage)
+          localStorage.removeItem('cart_code')
+          setNumberCartItems(0)
+      })
+
+      .catch(err => console.log(err.message)) 
+     }
+  },[])
+
   useEffect(function(){
 
     const queryParams = new URLSearchParams(location.search);
