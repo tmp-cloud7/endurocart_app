@@ -1,0 +1,89 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  background-color: #f8f9fa;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  color: #212529;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: #6050DC;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: #6050DC;
+  border-color: #6050DC;
+}
+
+.btn-primary:hover {
+  background-color: #4b3bcb;
+  border-color: #4b3bcb;
+}
+
+.login-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login-footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.login-footer a {
+  color: #6050DC;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+  color: #4b3bcb;
+}
+
+.mb-3:last-of-type {
+  margin-bottom: 1.8rem;
+}
