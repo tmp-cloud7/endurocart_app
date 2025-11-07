@@ -37,26 +37,64 @@ const PaymentSection = () => {
 
 
   return (
-    <div className='col-md-4'>
-    <div className={`card ${styles.card}`}>
-        <div className='card-header' style={{ backgroundColor: "#6050DC", color: "white" }}>
-            <h5>Payment Options</h5>
-        </div>
-        <div className='card-body'>
-            
-            <button className={`btn btn-primary w-100 mb-3 ${styles.paypalButton}`} onClick={paypalPayment} id='paypal-button'>
-                <i className='bi bi-paypal'></i> Pay with PayPal
-            </button>
-            
-            <button className={`btn btn-primary w-100 mb-3`} style={{ backgroundColor: "#f89500", border: "none", color: "white"}} onClick={makePayment}  id='flutterwave-button'>
-                <i className='bi bi-credit-card'></i> Pay with Flutterwave
+    <div className="col-md-4">
+        <div
+            className={`card shadow-sm border-0 ${styles.card}`}
+            style={{
+            borderRadius: "12px",
+            overflow: "hidden",
+            backgroundColor: "#fff",
+            }}
+        >
+            <div
+            className="card-header border-0"
+            style={{
+                backgroundColor: "#EF4444",
+                color: "#FEF2F2",
+                padding: "1rem 1.5rem",
+                fontWeight: "600",
+            }}
+            >
+            <h5 className="mb-0">Payment Options</h5>
+            </div>
+
+            <div className="card-body p-4">
+            <button
+                className={`btn w-100 mb-3 fw-semibold`}
+                style={{
+                backgroundColor: "#3B7BBF",
+                color: "white",
+                border: "none",
+                borderRadius: "8px",
+                padding: "0.75rem",
+                transition: "all 0.3s ease",
+                }}
+                onClick={paypalPayment}
+                id="paypal-button"
+            >
+                <i className="bi bi-paypal me-2"></i>Pay with PayPal
             </button>
 
+            <button
+                className="btn w-100 fw-semibold"
+                style={{
+                background: "linear-gradient(135deg, #FBBF24, #F59E0B)",
+                color: "#1F2937",
+                border: "none",
+                borderRadius: "8px",
+                padding: "0.75rem",
+                boxShadow: "0 4px 12px rgba(251, 191, 36, 0.4)",
+                transition: "all 0.3s ease",
+                }}
+                onClick={makePayment}
+                id="flutterwave-button"
+            >
+                <i className="bi bi-credit-card me-2"></i>Pay with Flutterwave
+            </button>
+            </div>
+        </div>
         </div>
 
-    </div>
-      
-    </div>
   )
 }
 

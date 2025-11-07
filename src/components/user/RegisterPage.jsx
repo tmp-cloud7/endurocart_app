@@ -103,7 +103,7 @@ const RegisterPage = () => {
         {success && <p className="alert alert-success text-center">{success}</p>}
 
         <h2 className='login-title'>Create an Account</h2>
-        <p className='login-subtitle'>Join HoodCart and start shopping smarter</p>
+        <p className='login-subtitle'>Join the EnduroCart Community — Built for Lifters, by Lifters.</p>
 
         <form onSubmit={handleSubmit}>
           <div className='mb-3'>

@@ -1,5 +1,5 @@
 import { FaCartShopping } from "react-icons/fa6"
-import { TiShoppingCart } from "react-icons/ti";
+import { GiWeightLiftingUp } from "react-icons/gi";
 import { Link } from "react-router-dom"
 import styles from "./NavBar.module.css"
 import NavBarLink from "./NavBarLink"
@@ -8,14 +8,44 @@ const NavBar = ({numCartItems}) => {
   return (
     <nav className={`navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 ${styles.stickyNavbar}`}>
       <div className="container">
-        <Link className="navbar-brand fw-bold text-uppercase" to="/">
-          HOODCART <TiShoppingCart
+       <Link
+          to="/"
+          className="navbar-brand fw-bold position-relative text-decoration-none"
           style={{
-            transform: "scaleX(-1)",   
-            color: "lightpink",       
+            display: "inline-block",
+            position: "relative",
           }}
-  />
+        >
+          {/* Icon in the background */}
+        <GiWeightLiftingUp
+          style={{
+            transform: "translateX(-50%) scaleX(-1)",
+            color: "#EF4444", // strong red accent
+            fontSize: "3.6rem",
+            opacity: 0.85,
+            position: "absolute",
+            top: "-0.4rem",
+            left: "50%",
+            zIndex: 0,
+          }}
+        />
+
+        <span
+          style={{
+            position: "relative",
+            zIndex: 1,
+            color: "#1F2937",
+            fontSize: "1.9rem",
+            fontWeight: "700",
+            letterSpacing: "0.5px",
+          }}
+        >
+          Enduro<span style={{ color: "#EF4444" }}>Cart</span>
+        </span>
+
         </Link>
+
+
 
         <button
           className="navbar-toggler"
@@ -41,7 +71,7 @@ const NavBar = ({numCartItems}) => {
               style={{
                 fontSize: "0.85rem",
                 padding: "0.5em 0.65em",
-                backgroundColor: "#6050DC",
+                backgroundColor: "#EF4444",
               }}
             >
               {numCartItems}
