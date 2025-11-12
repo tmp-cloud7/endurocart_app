@@ -1,6 +1,6 @@
-Hoodcart App (React Frontend)
+EndroCart App (React Frontend)
 
-The Hoodcart App is the frontend interface for the Hoodcart eCommerce platform.
+The EnduroCart  App is the frontend interface for the EnduroCart  eCommerce platform.
 It allows users to browse products, manage their shopping carts, and make payments securely using Flutterwave.
 
 Built with React, Axios, and Bootstrap, it connects directly to the Django REST API.
@@ -28,7 +28,7 @@ State Management	useState, useEffect
 Payment	Flutterwave Standard Integration
 ⚙️ Setup Instructions
 1️⃣ Clone the repository
-git clone https://github.com/yourusername/hoodcart_app.git
+git clone https://github.com/yourusername/endurocart_app.git
 cd hoodcart_app
 2️⃣ Install dependencies
 npm install
@@ -61,7 +61,7 @@ Payments are initiated from PaymentSection.jsx
 Payment success redirects trigger Django’s /payment_callback/
 
 🧩 Folder Structure
-hoodcart_app/
+endurocart_app/
 ├── src/
 │   ├── components/
 │   │   ├── ProductList.jsx
