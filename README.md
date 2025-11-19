@@ -69,20 +69,6 @@ The app integrates Flutterwave and PayPal standard checkout.
 Payments are initiated from PaymentSection.jsx.
 Payment success redirects trigger Django’s /payment_callback/.
 
-🧩 Folder Structure
-
-endurocart_app/
-├── src/
-│   ├── components/
-│   │   ├── ProductList.jsx
-│   │   ├── Cart.jsx
-│   │   ├── PaymentSection.jsx
-│   ├── pages/
-│   ├── App.js
-│   ├── index.js
-│   └── styles/
-└── package.json
-
 
 🧑‍💻 Developer
 
